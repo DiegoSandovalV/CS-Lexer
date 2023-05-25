@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program to Check whether the Entered Number <span class='keyword'>is</span> Even or Odd
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Collections<span class='operator'>.</span>Generic<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Linq<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Text<span class='operator'>;</span>
+ 
+<span class='keyword'>namespace</span> check1
+<span class='operator'>{</span>
+    <span class='class-struct'>class</span> Program
+    <span class='operator'>{</span>
+        <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>(</span><span class='keyword'>string</span><span class='operator'>[]</span> args<span class='operator'>)</span>
+        <span class='operator'>{</span>
+            <span class='data-type'>int</span> i<span class='operator'>;</span>
+            Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"Enter a Number <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            i <span class='operator'>=</span> <span class='data-type'>int</span><span class='operator'>.</span>Parse<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+            <span class='keyword'>if</span> <span class='operator'>(</span>i <span class='operator'>%</span> 2 <span class='operator'>==</span> 0<span class='operator'>)</span>
+            <span class='operator'>{</span>
+                Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"Entered Number <span class='keyword'>is</span> an Even Number"</span><span class='operator'>);</span>
+                Console<span class='operator'>.</span>Read<span class='operator'>();</span>
+            <span class='operator'>}</span>
+            <span class='keyword'>else</span>
+            <span class='operator'>{</span>
+                Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"Entered Number <span class='keyword'>is</span> an Odd Number"</span><span class='operator'>);</span>
+                Console<span class='operator'>.</span>Read<span class='operator'>();</span>
+            <span class='operator'>}</span>
+        <span class='operator'>}</span>
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>

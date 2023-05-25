@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program to Caluculate the power exponent value
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Collections<span class='operator'>.</span>Generic<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Linq<span class='operator'>;</span>
+<span class='class-struct'>class</span> program
+<span class='operator'>{</span>
+    <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>(</span><span class='keyword'>string</span><span class='operator'>[]</span> args<span class='operator'>)</span>
+    <span class='operator'>{</span>
+        IEnumerable<span class='operator'><</span><span class='data-type'>int</span><span class='operator'>></span> oddNums <span class='operator'>=</span>
+ 
+            Enumerable<span class='operator'>.</span>Range<span class='operator'>(</span>20<span class='operator'>,</span> 20<span class='operator'>).</span>Where<span class='operator'>(</span>x <span class='operator'>=></span> x <span class='operator'>%</span> 2 <span class='operator'>!=</span> 0<span class='operator'>);</span>
+ 
+        <span class='keyword'>foreach</span> <span class='operator'>(</span><span class='data-type'>int</span> n <span class='keyword'>in</span> oddNums<span class='operator'>)</span>
+        <span class='operator'>{</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span>n<span class='operator'>);</span>
+        <span class='operator'>}</span>
+        Console<span class='operator'>.</span>ReadLine<span class='operator'>();</span>
+ 
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>

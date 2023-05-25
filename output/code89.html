@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program to Print all the Armstrong Numbers from 1 to 1000
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='class-struct'>class</span> Program
+<span class='operator'>{</span>
+    <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>()</span>
+    <span class='operator'>{</span>
+        <span class='data-type'>int</span> a<span class='operator'>,</span> b<span class='operator'>,</span> c<span class='operator'>,</span> d<span class='operator'>;</span>
+        <span class='keyword'>for</span> <span class='operator'>(</span><span class='data-type'>int</span> i <span class='operator'>=</span> 1<span class='operator'>;</span> i <span class='operator'><=</span> 1000<span class='operator'>;</span> i<span class='operator'>++)</span>
+        <span class='operator'>{</span>
+            a <span class='operator'>=</span> i <span class='operator'>/</span> 100<span class='operator'>;</span>
+            b <span class='operator'>=</span> <span class='operator'>(</span>i <span class='operator'>-</span> a <span class='operator'>*</span> 100<span class='operator'>)</span> <span class='operator'>/</span> 10<span class='operator'>;</span>
+            c <span class='operator'>=</span> <span class='operator'>(</span>i <span class='operator'>-</span> a <span class='operator'>*</span> 100 <span class='operator'>-</span> b <span class='operator'>*</span> 10<span class='operator'>);</span>
+            d <span class='operator'>=</span> a <span class='operator'>*</span> a <span class='operator'>*</span> a <span class='operator'>+</span> b <span class='operator'>*</span> b <span class='operator'>*</span> b <span class='operator'>+</span> c <span class='operator'>*</span> c <span class='operator'>*</span> c<span class='operator'>;</span>
+            <span class='keyword'>if</span> <span class='operator'>(</span>i <span class='operator'>==</span> d<span class='operator'>)</span>
+            <span class='operator'>{</span>
+                System<span class='operator'>.</span>Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"<span class='operator'>{</span>0<span class='operator'>}</span>"</span><span class='operator'>,</span> i<span class='operator'>);</span>
+            <span class='operator'>}</span>
+        <span class='operator'>}</span> 
+        Console<span class='operator'>.</span>Read<span class='operator'>();</span>
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program to Display All the Prime Numbers Between 1 to 100
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Collections<span class='operator'>.</span>Generic<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Linq<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Text<span class='operator'>;</span>
+<span class='keyword'>namespace</span> PrimeNumber
+<span class='operator'>{</span>
+    <span class='class-struct'>class</span> Program
+    <span class='operator'>{</span>
+        <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>(</span><span class='keyword'>string</span><span class='operator'>[]</span> args<span class='operator'>)</span>
+        <span class='operator'>{</span>
+            <span class='boolean'>bool</span> isPrime <span class='operator'>=</span> <span class='boolean'>true</span><span class='operator'>;</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Prime Numbers <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            <span class='keyword'>for</span> <span class='operator'>(</span><span class='data-type'>int</span> i <span class='operator'>=</span> 2<span class='operator'>;</span> i <span class='operator'><=</span> 100<span class='operator'>;</span> i<span class='operator'>++)</span>
+            <span class='operator'>{</span>
+                <span class='keyword'>for</span> <span class='operator'>(</span><span class='data-type'>int</span> j <span class='operator'>=</span> 2<span class='operator'>;</span> j <span class='operator'><=</span> 100<span class='operator'>;</span> j<span class='operator'>++)</span>
+                <span class='operator'>{</span>
+ 
+                    <span class='keyword'>if</span> <span class='operator'>(</span>i <span class='operator'>!=</span> j <span class='operator'>&&</span> i <span class='operator'>%</span> j <span class='operator'>==</span> 0<span class='operator'>)</span>
+                    <span class='operator'>{</span>
+                        isPrime <span class='operator'>=</span> <span class='boolean'>false</span><span class='operator'>;</span>
+                        <span class='keyword'>break</span><span class='operator'>;</span>
+                    <span class='operator'>}</span>
+ 
+                <span class='operator'>}</span>
+                <span class='keyword'>if</span> <span class='operator'>(</span>isPrime<span class='operator'>)</span>
+                <span class='operator'>{</span>
+                    Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"\t"</span> <span class='operator'>+</span>i<span class='operator'>);</span>
+                <span class='operator'>}</span>
+                isPrime <span class='operator'>=</span> <span class='boolean'>true</span><span class='operator'>;</span>
+            <span class='operator'>}</span>
+            Console<span class='operator'>.</span>ReadKey<span class='operator'>();</span>
+        <span class='operator'>}</span>
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>

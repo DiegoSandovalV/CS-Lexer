@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program Checks Whether the Entered Number <span class='keyword'>is</span> a Amicable Number or Not
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Collections<span class='operator'>.</span>Generic<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Linq<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Text<span class='operator'>;</span>
+ 
+<span class='keyword'>namespace</span> Program
+<span class='operator'>{</span>
+    <span class='class-struct'>class</span> Program
+    <span class='operator'>{</span>
+        <span class='access-type'>public</span> <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>(</span>String<span class='operator'>[]</span> args<span class='operator'>)</span>
+        <span class='operator'>{</span>
+            <span class='data-type'>int</span> num1<span class='operator'>,</span> num2<span class='operator'>,</span> sum1 <span class='operator'>=</span> 0<span class='operator'>,</span> sum2 <span class='operator'>=</span> 0<span class='operator'>,</span> i<span class='operator'>;</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Enter First Number <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            num1 <span class='operator'>=</span> <span class='data-type'>int</span><span class='operator'>.</span>Parse<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Enter Second Number <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            num2 <span class='operator'>=</span> <span class='data-type'>int</span><span class='operator'>.</span>Parse<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+            <span class='keyword'>for</span> <span class='operator'>(</span>i <span class='operator'>=</span> 1<span class='operator'>;</span> i <span class='operator'><</span> num1<span class='operator'>;</span> i<span class='operator'>++)</span>
+            <span class='operator'>{</span>
+                <span class='keyword'>if</span> <span class='operator'>(</span>num1 <span class='operator'>%</span> i <span class='operator'>==</span> 0<span class='operator'>)</span>
+                <span class='operator'>{</span>
+                    sum1 <span class='operator'>=</span> sum1 <span class='operator'>+</span> i<span class='operator'>;</span>
+                <span class='operator'>}</span>
+            <span class='operator'>}</span>
+            <span class='keyword'>for</span> <span class='operator'>(</span>i <span class='operator'>=</span> 1<span class='operator'>;</span> i <span class='operator'><</span> num2<span class='operator'>;</span> i<span class='operator'>++)</span>
+            <span class='operator'>{</span>
+                <span class='keyword'>if</span> <span class='operator'>(</span>num2 <span class='operator'>%</span> i <span class='operator'>==</span> 0<span class='operator'>)</span>
+                <span class='operator'>{</span>
+                    sum2 <span class='operator'>=</span> sum2 <span class='operator'>+</span> i<span class='operator'>;</span>
+                <span class='operator'>}</span>
+            <span class='operator'>}</span>
+            <span class='keyword'>if</span> <span class='operator'>(</span>num1 <span class='operator'>==</span> sum2 <span class='operator'>&&</span> num2 <span class='operator'>==</span> sum1<span class='operator'>)</span>
+            <span class='operator'>{</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"They are a Pair of Amicable Numbers"</span><span class='operator'>);</span>
+                Console<span class='operator'>.</span>ReadLine<span class='operator'>();</span>
+            <span class='operator'>}</span>
+            <span class='keyword'>else</span>
+            <span class='operator'>{</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"They are not Amicable Numbers"</span><span class='operator'>);</span>
+                Console<span class='operator'>.</span>ReadLine<span class='operator'>();</span>
+            <span class='operator'>}</span>
+        <span class='operator'>}</span>
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>

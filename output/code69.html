@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program to Perform all Basic Arithmetic Operations
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Collections<span class='operator'>.</span>Generic<span class='operator'>;</span>
+<span class='keyword'>using</span> System<span class='operator'>.</span>Text<span class='operator'>;</span>
+<span class='keyword'>namespace</span> Program
+<span class='operator'>{</span>
+    <span class='class-struct'>class</span> Program
+    <span class='operator'>{</span>
+        <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>(</span><span class='keyword'>string</span><span class='operator'>[]</span> args<span class='operator'>)</span>
+        <span class='operator'>{</span>
+            <span class='data-type'>int</span> Num1<span class='operator'>,</span> Num2<span class='operator'>,</span> result<span class='operator'>;</span>
+            <span class='data-type'>char</span> option<span class='operator'>;</span>
+            Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"Enter the First Number <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            Num1 <span class='operator'>=</span> Convert<span class='operator'>.</span>ToInt32<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+            Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"Enter the Second Number <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            Num2 <span class='operator'>=</span> Convert<span class='operator'>.</span>ToInt32<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Main Menu"</span><span class='operator'>);</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"1<span class='operator'>.</span> Addition"</span><span class='operator'>);</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"2<span class='operator'>.</span> Subtraction"</span><span class='operator'>);</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"3<span class='operator'>.</span> Multiplication"</span><span class='operator'>);</span>
+            Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"4<span class='operator'>.</span> Division"</span><span class='operator'>);</span>
+            Console<span class='operator'>.</span>Write<span class='operator'>(</span><span class='string'>"Enter the Operation you want to perform <span class='operator'>:</span> "</span><span class='operator'>);</span>
+            option <span class='operator'>=</span> Convert<span class='operator'>.</span>ToChar<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+            <span class='keyword'>switch</span> <span class='operator'>(</span>option<span class='operator'>)</span>
+            <span class='operator'>{</span>
+            <span class='keyword'>case</span> '1'<span class='operator'>:</span>
+                result <span class='operator'>=</span> Num1 <span class='operator'>+</span> Num2<span class='operator'>;</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"The result of Addition <span class='keyword'>is</span> <span class='operator'>:</span> <span class='operator'>{</span>0<span class='operator'>}</span>"</span><span class='operator'>,</span> result<span class='operator'>);</span>
+                <span class='keyword'>break</span><span class='operator'>;</span>
+            <span class='keyword'>case</span> '2'<span class='operator'>:</span>
+                result <span class='operator'>=</span> Num1 <span class='operator'>-</span> Num2<span class='operator'>;</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"The result of Subtraction <span class='keyword'>is</span> <span class='operator'>:</span> <span class='operator'>{</span>0<span class='operator'>}</span>"</span><span class='operator'>,</span> result<span class='operator'>);</span>
+                <span class='keyword'>break</span><span class='operator'>;</span>
+            <span class='keyword'>case</span> '3'<span class='operator'>:</span>
+                result <span class='operator'>=</span> Num1 <span class='operator'>*</span> Num2<span class='operator'>;</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"The result of Multiplication <span class='keyword'>is</span> <span class='operator'>:</span> <span class='operator'>{</span>0<span class='operator'>}</span>"</span><span class='operator'>,</span> result<span class='operator'>);</span>
+                <span class='keyword'>break</span><span class='operator'>;</span>
+            <span class='keyword'>case</span> '4'<span class='operator'>:</span>
+                result <span class='operator'>=</span> Num1 <span class='operator'>/</span> Num2<span class='operator'>;</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"The result of Division <span class='keyword'>is</span> <span class='operator'>:</span> <span class='operator'>{</span>0<span class='operator'>}</span>"</span><span class='operator'>,</span> result<span class='operator'>);</span>
+                <span class='keyword'>break</span><span class='operator'>;</span>
+            <span class='keyword'>default</span><span class='operator'>:</span>
+                Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Invalid Option"</span><span class='operator'>);</span>
+                <span class='keyword'>break</span><span class='operator'>;</span>
+            <span class='operator'>}</span>
+            Console<span class='operator'>.</span>ReadLine<span class='operator'>();</span>
+        <span class='operator'>}</span>
+ 
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>

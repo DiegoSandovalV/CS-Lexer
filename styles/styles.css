@@ -1,0 +1,56 @@
+body {
+    background-color: #282c34;
+    color: #abb2bf;
+}
+
+span *{
+    color: inherit !important;
+}
+
+
+.operator {
+    color: #c678dd;
+}
+
+.keyword {
+    color: #d19a66;
+}
+
+.comment {
+    color: #5c6370;
+    font-style: italic;
+}
+
+
+
+.access-type {
+    color: #61afef;
+}
+
+.data-modifier {
+    color: #98c379;
+}
+
+.class-struct {
+    color: #e06c75;
+}
+
+.boolean {
+    color: #7eeffe;
+}
+
+.data-type {
+    color: #d19a66;
+}
+
+.string {
+    color: #98f78b;
+}
+
+.binary-literal {
+    color: #ff6a00;
+}
+
+.hex-literal {
+    color: #f047ff;
+}

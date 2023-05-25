@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Contents</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+</head>
+<body>
+<pre>
+<span class='comment'><span class='operator'>//</span> C# Program to Perform Multiplication of Exponents of Same Base
+</span>
+<span class='keyword'>using</span> System<span class='operator'>;</span>
+<span class='class-struct'>class</span> Program
+<span class='operator'>{</span>
+    <span class='data-modifier'>static</span> <span class='data-type'>void</span> Main<span class='operator'>()</span>
+    <span class='operator'>{</span>
+        Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Enter the Base <span class='operator'>:</span> "</span><span class='operator'>);</span>
+        <span class='data-type'>double</span> num <span class='operator'>=</span> <span class='data-type'>double</span><span class='operator'>.</span>Parse<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+        Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Enter the First Exponent <span class='operator'>:</span>"</span><span class='operator'>);</span>
+        <span class='data-type'>double</span> exp1 <span class='operator'>=</span> <span class='data-type'>double</span><span class='operator'>.</span>Parse<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+        Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Enter the Second Exponent <span class='operator'>:</span>"</span><span class='operator'>);</span>
+        <span class='data-type'>double</span> exp2 <span class='operator'>=</span> <span class='data-type'>double</span><span class='operator'>.</span>Parse<span class='operator'>(</span>Console<span class='operator'>.</span>ReadLine<span class='operator'>());</span>
+        <span class='data-type'>double</span> mul<span class='operator'>;</span>
+        mul <span class='operator'>=</span> exp1 <span class='operator'>+</span> exp2<span class='operator'>;</span>
+        Console<span class='operator'>.</span>WriteLine<span class='operator'>(</span><span class='string'>"Result <span class='keyword'>is</span> <span class='operator'>:</span> <span class='operator'>{</span>0<span class='operator'>}^{</span>1<span class='operator'>}</span> <span class='operator'>:</span> <span class='operator'>{</span>2<span class='operator'>}</span>"</span><span class='operator'>,</span> num<span class='operator'>,</span> mul<span class='operator'>,</span> Math<span class='operator'>.</span>Pow<span class='operator'>(</span>num<span class='operator'>,</span> mul<span class='operator'>));</span>
+        Console<span class='operator'>.</span>ReadLine<span class='operator'>();</span>
+    <span class='operator'>}</span>
+<span class='operator'>}</span></pre>
+</body>
+</html>
